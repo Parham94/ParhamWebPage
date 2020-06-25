@@ -1,23 +1,120 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<title>Parham Tabibi: Personal Website</title>
+
+		<div style="width: 20%; height: 130%; float: left">
+			
+				<img src="C:\Users\pt240\ParhamWebPage\webpage-pic.jpg" width="100%" height="100%">
+
+		</div>
+
+		<div style="width: 80%; height: 100%; float: right">
+			<h1 style="font-size: 40px; text-align: center; padding: 20px;"> Parham's web site</h1>
+
+			<div style="height: 100% ; width: 80%">
+				<style type="text/css">
+
+					body, html {
+						height: 42%;
+						width: 100%;
+						margin: 0;
+						font-family: arial;
+					}
+					
+					.tablink{
+						background-color: #555;
+						color: white;
+						float: left;
+						border: 5;
+						cursor: pointer;
+						padding: 10px 10px;
+						font-size: 20px;
+						width:13.33%;
+
+					}
+
+					.tablink:hover {
+						background-color: #777;
+					}
+
+					.tabcontent {
+						color: white;
+						display: none;
+						height:80% ;
+					}
+
+				</style>
+			</div>
+
+		</div>
+
 	</head>
 
-
 	<body>
-		<table border="1">
-			<tr>
-				<td rowspan="3">
-					
-				</td>
+		
+		<button class="tablink" onclick="openPage('Biography')">Biography</button>
 
-				<td colspan="4" rowspan="7"> 
+		<button class="tablink" onclick="openPage('Dreams')">Dreams</button>
 
-				</td>
-			</tr>
+		<button class="tablink" onclick="openPage('Resume')">Resume</button>
 
-		</table>
+		<button class="tablink" onclick="openPage('XtraCurric')">XtraCurric</button>
+
+		<button class="tablink" onclick="openPage('Projects')">Projects</button>
+
+		<button class="tablink" onclick="openPage('Contact')">Contact</button>
+
+		<div id="Biography" class="tabcontent">
+			<h3>Biography </h3>
+			<p> to be filled </p>
+		</div>
+
+		<div id="Dreams" class="tabcontent">
+			<h3>Dreams </h3>
+			<p> to be filled </p>
+		</div>
+
+		<div id="Resume" class="tabcontent">
+			<h3>Resume </h3>
+			<p> to be filled </p>
+		</div>
+
+		<div id="XtraCurric" class="tabcontent">
+			<h3>XtraCurric </h3>
+			<p> to be filled </p>
+		</div>
+
+		<div id="Projects" class="tabcontent">
+			<h3>Projects </h3>
+			<p> to be filled </p>
+		</div>
+
+		<div id="Contact" class="tabcontent">
+			<h3>Contact </h3>
+			<p> to be filled </p>
+		</div>
+
+		<script type="text/javascript">
+
+			function openPage(pageName,elmnt,color) {
+				  var i, tabcontent, tablinks;
+				  tabcontent = document.getElementsByClassName("tabcontent");
+				  for (i = 0; i < tabcontent.length; i++) {
+				    tabcontent[i].style.display = "none";
+				  }
+				  tablinks = document.getElementsByClassName("tablink");
+				  for (i = 0; i < tablinks.length; i++) {
+				    tablinks[i].style.backgroundColor = "";
+				  }
+				  document.getElementById(pageName).style.display = "block";
+				  elmnt.style.backgroundColor = color;
+			}
+
+			document.getElementsById("defaultOpen").click();
+
+		</script>
 	</body>
 
 
