@@ -38,13 +38,6 @@
 	width: 16.65%;
 }
 
-/*#bio{background-image: url("tabbg.jpg");}
-#dre{background-image: url("tabbg.jpg");}
-#res{background-image: url("tabbg.jpg");}
-#XC{background-image: url("tabbg.jpg");}
-#projs{background-image: url("tabbg.jpg");}
-#cont{background-image: url("tabbg.jpg");}*/
-
 .tablink:hover{
 	background-color: #777;
 	font-style: bold;
