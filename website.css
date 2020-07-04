@@ -1,0 +1,84 @@
+
+#image{
+	width: 20%;
+}
+
+#header{
+	top: 0px;
+	width: 80%; 
+	height: 24%;
+	float: right;
+}
+
+#headerText{
+	margin: 7%;
+	color: white;
+	font-style: oblique; 
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	font-size: 40px;
+}
+
+#tabs{
+	float: right;
+	width: 80%;
+	overflow: hidden;
+}
+
+.tablink{
+	background-image: url("tabbg.jpg");
+	color: white;
+	font-weight: bold;
+	line-height: 40px;
+	float:right;
+	cursor: pointer;
+	padding: 10px 10px;
+	font-size: 30px;
+	width: 16.65%;
+}
+
+/*#bio{background-image: url("tabbg.jpg");}
+#dre{background-image: url("tabbg.jpg");}
+#res{background-image: url("tabbg.jpg");}
+#XC{background-image: url("tabbg.jpg");}
+#projs{background-image: url("tabbg.jpg");}
+#cont{background-image: url("tabbg.jpg");}*/
+
+.tablink:hover{
+	background-color: #777;
+	font-style: bold;
+}
+
+.tablink:active {
+	color: black;
+}
+
+.tabcontent{
+	color: black;
+	display: none;
+	height: 100%;
+	overflow: hidden;
+}
+
+.transbox{
+	margin: 30px;
+	background-color: #ffffff;
+	border: 1px;
+	opacity: 0.8;
+}
+
+#Biography {background-image: url('biobg.jpg')}
+#Dreams {background-image: url('headbg.jpg')}
+#Resume {background-image: url('resbg1.jpg')}
+#XtraCurric {background-image: url('XCbg1.png');}
+#Projects {background-image: url('projbg1.jpg');}
+#Contact {background-color: white}
+
+body, html{
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	margin: 0;
+	font-family: Calibri; 
+}

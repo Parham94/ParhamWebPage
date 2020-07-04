@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="website.css">
+		<title> Parham's Website</title>
+
+		<div id="header" style="background-color: black">
+				<div id="headerText"> Parham's Website</div>
+		</div>
+
+		<div id="tabs">
+
+			<button class="tablink" onclick="openPage('Biography',this,'red')" id="Bio">Biography</button>
+			<button class="tablink" onclick="openPage('Dreams',this,'green')" id="Dre">Dreams</button>
+			<button class="tablink" onclick="openPage('Resume',this,'yellow')" id="Res">Resume</button>
+			<button class="tablink" onclick="openPage('XtraCurric',this,'purple')" id="XC">XtraCurric</button>
+			<button class="tablink" onclick="openPage('Projects',this,'orange')" id="Projs">Projects</button>
+			<button class="tablink" onclick="openPage('Contact',this,'white')" id="Cont">Contact</button>
+
+		</div>	
+
+		<div id="image">
+			<img src="C:\Users\pt240\ParhamWebPage\webpage-pic.jpg" style="width: 100%; height: 100%">
+		</div>
+
+
+	</head>
+
+	<body>
+		<div id="Biography" class="tabcontent"> 
+			<div class="transbox">
+				<h3>Where everything started</h3>
+				<p>To be filled</p>
+			</div>	
+		</div>
+
+		<div id="Dreams" class="tabcontent"> 
+			<div class="transbox">
+				<h3>Where I am headed</h3>
+				<p>To be filled</p>
+			</div>	
+		</div>
+
+		<div id="Resume" class="tabcontent"> 
+			<div class="transbox">
+				<h3>Resume</h3>
+				<p>To be filled</p>
+			</div>
+		</div>
+
+		<div id="XtraCurric" class="tabcontent"> 
+			<div class="transbox">
+				<h3>What I do when I am not studying</h3>
+				<p>To be filled</p>
+			</div>	
+		</div>
+
+		<div id="Projects" class="tabcontent"> 
+			<div class="transbox">
+				<h3>What I have done</h3>
+				<p>To be filled</p>
+			</div>	
+		</div>
+
+		<div id="Contact" class="tabcontent"> 
+			<div class="transbox">
+				<h3>Reach me at ...</h3>
+				<p>To be filled</p>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+			function openPage(pageName,elmnt, color) {
+				
+				var i, tabcontent, tablinks;
+
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+
+				tablinks = document.getElementsByClassName("tablink");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].style.backgroundColor = "";
+				}
+
+				document.getElementById(pageName).style.display = "block";
+				elmnt.style.backgroundColor = color;
+
+			}
+
+			document.getElementById("Bio").click();
+
+		</script>
+	</body>		
+</html>
